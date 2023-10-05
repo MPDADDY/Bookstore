@@ -1,7 +1,12 @@
-const redux = require('redux')
-import {AddBooks, RemoveBooks, addBooksReducer, removeBooksReducer} from '../books/booksSlice'
-const createStore = redux.createStore
-const store = createStore({addBooksReducer, removeBooksReducer,AddBooks,RemoveBooks})
-const unsubscribe = store.subscribe(()=> store.getState())
+import {configureStore} from '@reduxjs/toolkit';
+import booksReducer from './books/bookSlice';
+import categoriesReducer from './categories/categoriesSlice';
 
-unsubscribe()
+const store = configureStore({
+  reducer: {
+    books: booksReducer,
+    categories: categoriesReducer,
+  },
+});
+
+export default store;
