@@ -11,4 +11,5 @@ const categoriesSlice = createSlice({
   reducers: {},
 });
 
+export const selectStatus = (state) => state.categories.status;
 export default categoriesSlice.reducer;
