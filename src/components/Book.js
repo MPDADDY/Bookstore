@@ -16,7 +16,7 @@ const Book = () => {
           <p>{book.author}</p>
           <span>
             <button type="button">Comment</button>
-            <button type="button" onClick={() => handleRemoveBook(book.item_id)}>Delete</button>
+            <button type="button" onClick={() => handleRemoveBook(book.id)}>Delete</button>
             <button type="button">Edit</button>
           </span>
         </div>

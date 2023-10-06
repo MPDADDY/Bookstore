@@ -4,7 +4,6 @@ import { checkStatus } from '../redux/categories/categoriesSlice';
 
 function Categories() {
   const status = useSelector(checkStatus);
-  // const handleClick = () => 'Comming soon';
   const handleClick = () => `Status: ${status}`;
 
   return (
