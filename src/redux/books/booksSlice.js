@@ -4,21 +4,21 @@ const initialState = {
   books: [
     {
       id: '1',
-      title: 'The Great Gatsby',
-      author: 'John Smith',
-      category: 'Fiction',
+      title: 'Kanissa',
+      author: 'Babuu',
+      category: 'liguistic',
     },
     {
       id: '2',
       title: 'kifo Kisimani',
       author: 'mama wanyika',
-      category: 'Fiction',
+      category: 'linguistic',
     },
     {
       id: '3',
       title: 'bundox',
       author: 'mzee yusuf',
-      category: 'Nonfiction',
+      category: 'science',
     },
   ],
 };
