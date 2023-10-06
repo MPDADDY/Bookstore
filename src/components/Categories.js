@@ -1,7 +1,10 @@
 import React from 'react';
+import { useSelector } from 'react-redux/es/hooks/useSelector';
+import { checkStatus } from '../redux/categories/categoriesSlice';
 
 function Categories() {
-  const handleClick = () => 'Comming soon';
+  const status = useSelector(checkStatus);
+  const handleClick = () => `Status: ${status}`;
 
   return (
     <div>
