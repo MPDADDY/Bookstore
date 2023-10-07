@@ -33,7 +33,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 MATH_MAGICIANS <a name="about-project"></a>
+# 📖 Bookstore <a name="about-project"></a>
 
 **Book Store** In this app the user will add the books they've read and they will be able to track their progress.
 
@@ -96,14 +96,6 @@ Clone this repository to your desired folder:
   git clone git@github.com:MPDADDY/bookstore.git
 ```
 
-### Install
-
-Install this project with:
-
-```sh
-  cd my-project
-  npm install
-```
 
 ### Usage
 
