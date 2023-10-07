@@ -97,6 +97,14 @@ Clone this repository to your desired folder:
 ```
 
 
+### Install
+
+```sh
+  cd bookstore
+  npm install
+```
+
+
 ### Usage
 
 To run the project run visual studio code and open index.html with liveserver extension
