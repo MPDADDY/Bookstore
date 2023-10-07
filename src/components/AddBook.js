@@ -7,6 +7,7 @@ const AddBook = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,11 +16,17 @@ const AddBook = () => {
       title,
       author,
     };
+
+    console.log(newBook);
     dispatch(added(newBook));
     setTitle('');
     setAuthor('');
   };
 
+  const handleCategory = (e) => {
+    setCategory(e.target.value);
+  };
+  const isFormValid = !!category;
   return (
     <div className="add-new-book">
       <h1>Add New Book</h1>
@@ -36,7 +43,17 @@ const AddBook = () => {
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <button type="submit">Add Book</button>
+        <select
+          value={category}
+          onChange={handleCategory}
+        >
+          <option value="" disabled>
+            Select Category
+          </option>
+          <option value="Non-Fiction">Non-Fiction</option>
+          <option value="Science Fiction">Science Fiction</option>
+        </select>
+        <button type="submit" disabled={!isFormValid}>Add Book</button>
       </form>
     </div>
   );
