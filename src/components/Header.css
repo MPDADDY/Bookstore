@@ -1,0 +1,35 @@
+.books_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.dark_blue {
+  color: rgb(45, 119, 215);
+  font-size: 22px;
+}
+
+.gray_title {
+  color: gray;
+  font-size: 12px;
+}
+
+.fade_title {
+  color: rgb(169, 166, 166);
+  font-size: 12px;
+}
+
+.profile img {
+  width: 30px;
+  height: 30px;
+}

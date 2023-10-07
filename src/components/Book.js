@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBookAsync } from '../redux/books/booksSlice';
+import './Book.css';
+import load from './load.png';
 
 const Book = ({ book }) => {
   const {
@@ -25,24 +27,27 @@ const Book = ({ book }) => {
   };
 
   return (
-    <div className="book-container">
+    <div className="book_container">
       <div className="book-header">
         <h3 className="book-category">{category}</h3>
         <h2 className="book-title">{title}</h2>
         <p className="book-author">{author}</p>
         <div className="book-actions">
-          <button type="button">Comments |</button>
-          <button type="button" onClick={handleRemove}>Remove |</button>
-          <button type="button">Edit</button>
+          <button className="buttons" type="button">Comments |</button>
+          <button className="buttons" type="button" onClick={handleRemove}>Remove |</button>
+          <button className="buttons" type="button">Edit</button>
         </div>
       </div>
       <section className="book-progress">
-        <div className="completed">
-          <h2>
-            {progress}
-            %
-          </h2>
-          <span>Completed</span>
+        <div className="completed_container">
+          <img className="loader" src={load} alt="loader" />
+          <div>
+            <h2>
+              {progress}
+              %
+            </h2>
+            <p className="completed">Completed</p>
+          </div>
         </div>
         <div className="vertical-line" />
         <div className="update-progress-section">
@@ -51,7 +56,7 @@ const Book = ({ book }) => {
             Page:
             {currentPage}
           </p>
-          <button type="button" onClick={handleUpdateProgress}>Update Progress</button>
+          <button className="blue_button" type="button" onClick={handleUpdateProgress}>Update Progress</button>
         </div>
       </section>
     </div>

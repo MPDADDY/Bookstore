@@ -1,0 +1,22 @@
+.book_list_container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(251, 252, 253);
+  width: 600px;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 3px 4px 6px 40px rgb(251, 252, 253);
+  max-height: 500px;
+}
+
+.book-list {
+  overflow-y: scroll;
+  height: 400px;
+}
+
+.book-input h2 {
+  color: gray;
+  font-size: 18px;
+}

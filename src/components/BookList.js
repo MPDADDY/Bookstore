@@ -5,6 +5,8 @@ import BookForm from './Bookform';
 import { fetchBooks } from '../redux/books/booksSlice';
 import Indicator from './Indicator';
 import Book from './Book';
+import Header from './Header';
+import './BookList.css';
 
 const BookList = () => {
   const books = useSelector((store) => store.book.books);
@@ -19,7 +21,8 @@ const BookList = () => {
     return <div className="loading"><Indicator /></div>;
   } if (statusFetch === 'succeeded') {
     return (
-      <div>
+      <div className="book_list_container">
+        <Header />
         <div className="book-list">
           {books.map((book) => (
             <Book key={books.itemId || books.item_id || uuidv4()} book={book} />
