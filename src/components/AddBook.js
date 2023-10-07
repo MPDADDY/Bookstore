@@ -47,7 +47,7 @@ const AddBook = () => {
           value={category}
           onChange={handleCategory}
         >
-          <option value="" disabled>
+          <option value="" selected>
             Select Category
           </option>
           <option value="Non-Fiction">Non-Fiction</option>
