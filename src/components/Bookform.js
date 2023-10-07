@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBookAsync } from '../redux/books/booksSlice';
+import './BookList.css';
 
 const BookForm = () => {
   const dispatch = useDispatch();
@@ -71,7 +72,7 @@ const BookForm = () => {
           <option value="Non-Fiction">Non-Fiction</option>
           <option value="Science Fiction">Science Fiction</option>
         </select>
-        <button type="submit" disabled={!isFormValid}>Add Book</button>
+        <button className="blue_button" type="submit" disabled={!isFormValid}>Add Book</button>
       </form>
     </div>
   );

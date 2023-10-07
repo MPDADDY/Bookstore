@@ -1,0 +1,66 @@
+.book_container {
+  background-color: white;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.book-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.blue_button {
+  background-color: rgb(45, 119, 215);
+  color: white;
+  border-radius: 4px;
+  padding: 4px;
+  border: 1px solid gray;
+}
+
+.book-category {
+  color: gray;
+  font-size: 14px;
+}
+
+.book-title {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+}
+
+.book-author {
+  color: rgb(124, 124, 241);
+  font-size: 10px;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.buttons {
+  color: rgb(125, 125, 239);
+  border: 1px solid white;
+  background-color: white;
+  font-size: 10px;
+  margin-right: 5px;
+  padding: 4px;
+}
+
+.buttons:hover {
+  border: 1px solid rgb(167, 167, 245);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.completed h2 {
+  color: rgb(72, 70, 70);
+}
