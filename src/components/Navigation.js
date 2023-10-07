@@ -1,7 +1,7 @@
 import React from 'react';
-import UserProfile from './user.png';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import UserProfile from './user.png';
 import './Navigation.css';
 
 const MenuItem = ({ to, children }) => (
