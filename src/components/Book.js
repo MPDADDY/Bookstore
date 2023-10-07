@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBookAsync } from '../redux/books/booksSlice';
 import './Book.css';
+import load from './load.png';
 
 const Book = ({ book }) => {
   const {
@@ -38,12 +39,15 @@ const Book = ({ book }) => {
         </div>
       </div>
       <section className="book-progress">
-        <div className="completed">
-          <h2>
-            {progress}
-            %
-          </h2>
-          <span>Completed</span>
+        <div className="completed_container">
+          <img className="loader" src={load} alt="loader" />
+          <div>
+            <h2>
+              {progress}
+              %
+            </h2>
+            <p className="completed">Completed</p>
+          </div>
         </div>
         <div className="vertical-line" />
         <div className="update-progress-section">

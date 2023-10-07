@@ -4,7 +4,6 @@
   justify-content: space-between;
   background-color: white;
   padding: 15px 0;
-  margin-bottom: 20px;
 }
 
 .nav {
@@ -28,4 +27,9 @@
 .fade_title {
   color: rgb(169, 166, 166);
   font-size: 12px;
+}
+
+.profile img {
+  width: 30px;
+  height: 30px;
 }

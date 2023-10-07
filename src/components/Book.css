@@ -64,3 +64,19 @@
 .completed h2 {
   color: rgb(72, 70, 70);
 }
+
+.loader {
+  width: 20px;
+  height: 20px;
+}
+
+.completed {
+  font-size: 11px;
+}
+
+.completed_container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
